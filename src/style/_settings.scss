@@ -1,0 +1,43 @@
+$font-color1 : black;
+
+
+* {
+    box-sizing: border-box;
+    object-fit: cover;
+    scroll-behavior: smooth;
+    color: $font-color1
+}
+
+body {
+    background: rgb(34, 33, 33);
+    max-width: 1400px;
+    height: 100vh;
+    margin: auto;
+}
+
+section {
+    padding: 20px;
+    background-color: white;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+figure {
+    margin: 0px;
+
+    figcaption {
+        text-align: center;
+    }
+}
+
+table {
+    margin: 0px;
+}

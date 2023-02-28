@@ -1,0 +1,38 @@
+.home-container {
+
+    .home-title {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            width: 40%;
+            height: 4px;
+            background-color: rgb(164, 162, 162);
+        }
+    }
+
+    .home-video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0px 10px;
+    }
+
+    .last-news-container {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            width: 40%;
+            height: 4px;
+            background-color: rgb(164, 162, 162);
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.about-container {
+
+    h2 {
+        position: relative;
+        text-align: center;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            width: 110%;
+            height: 4px;
+            transform: translateX(-50%);
+            background-color: rgb(164, 162, 162);
+        }
+    }
+
+    .president-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .president-word {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            padding: 20px 0px;
+
+            blockquote {
+                position: relative;
+                width: 50%;
+                text-align: justify;
+                margin: 0px;
+            }
+
+            img {
+                display: block;
+                position: relative;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .opening_price-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .opening_price {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            padding: 20px 0px;
+
+            .opening-hours {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40%;
+
+                table {
+                    width: 100%;
+                    
+                    th {
+                        font-size: 1.3rem;
+                    }
+                    
+                    td {
+                        text-align: center;
+                        font-size: 1.3rem;
+                        padding: 5px;
+                    }
+
+                    table, th, td {
+                        border: 1px solid black;
+                    }
+                }
+            }
+
+        }
+    }
+}

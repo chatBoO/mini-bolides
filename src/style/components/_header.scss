@@ -1,0 +1,32 @@
+header {
+    position: relative;
+    min-height: 25vh;
+
+    .header-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 100px;
+        padding: 0px 25px;
+        background-color: rgba(0, 0, 0, 0.801);
+        color: white;
+        z-index: 1;
+
+        &.hidden {
+            top: -100px
+        }
+    }
+
+    .titleLogo {
+        border-radius: 15px;
+    }
+
+    .contact, .contact a, .contact span {
+        line-height: 1.5rem;
+        color: beige;
+    }
+}
