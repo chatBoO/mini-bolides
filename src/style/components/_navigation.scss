@@ -1,31 +1,27 @@
 nav {
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    background: rgb(92, 91, 91);
-    background: linear-gradient(90deg, rgba(92, 91, 91, 1) 0%, rgba(129, 124, 124, 1) 35%, rgba(158, 156, 156, 1) 61%, rgba(180, 179, 179, 1) 100%);
-    border-radius: 10px 10px 0px 0px;
+    width: 85%;
+    height: 100%;
+    user-select: none;
 
     .nav-container {
         display: flex;
         justify-content: space-between;
-        width: 50%;
 
         ul {
             display: flex;
-            width: 100%;
+            justify-content: space-between;
 
             li {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 25%;
-                height: 80px;
+                width: 150px;
+                height: 100%;
 
                 &:hover {
-                    background-color: lighten($color: rgb(92, 91, 91), $amount: 20);
+                    background-color: lighten($color: rgba(0, 0, 0, 0.801), $amount: 20);
                 }
 
                 a {
@@ -33,6 +29,7 @@ nav {
                     justify-content: center;
                     align-items: center;
                     font-size: 1.2rem;
+                    color: rgb(245, 236, 226);
                 }
             }
         }
@@ -42,17 +39,26 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-right: 20px;
 
         p {
             margin: 0px;
             padding-right: 10px;
+            text-align: center;
+            color: rgb(245, 236, 226);
+        }
+
+        a {
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
 
     .nav-active {
         transform: scale(1.3);
-        color: lighten($color: $font-color1, $amount: 20);
+        color: lighten($color: rgb(212, 212, 145), $amount: 20);
         font-weight: bold;
         text-decoration: underline;
     }

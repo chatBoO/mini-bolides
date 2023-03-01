@@ -10,7 +10,7 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        min-height: 100px;
+        height: 100px;
         padding: 0px 25px;
         background-color: rgba(0, 0, 0, 0.801);
         color: white;
@@ -19,14 +19,9 @@ header {
         &.hidden {
             top: -100px
         }
-    }
 
-    .titleLogo {
-        border-radius: 15px;
-    }
-
-    .contact, .contact a, .contact span {
-        line-height: 1.5rem;
-        color: beige;
+        .logo {
+            display: block;
+        }
     }
 }

@@ -1,5 +1,11 @@
 .about-container {
 
+    .about-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     h2 {
         position: relative;
         text-align: center;
@@ -25,19 +31,23 @@
         .president-word {
             display: flex;
             justify-content: space-between;
-            width: 80%;
+
+            width: 70%;
             padding: 20px 0px;
 
             blockquote {
-                position: relative;
+                display: flex;
+                align-items: center;
                 width: 50%;
+                font-size: 1.8rem;
+                font-style: italic;
+                line-height: 3rem;
                 text-align: justify;
                 margin: 0px;
             }
 
             img {
                 display: block;
-                position: relative;
                 margin-bottom: 5px;
             }
         }
@@ -62,18 +72,20 @@
 
                 table {
                     width: 100%;
-                    
+
                     th {
                         font-size: 1.3rem;
                     }
-                    
+
                     td {
                         text-align: center;
                         font-size: 1.3rem;
                         padding: 5px;
                     }
 
-                    table, th, td {
+                    table,
+                    th,
+                    td {
                         border: 1px solid black;
                     }
                 }

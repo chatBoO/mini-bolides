@@ -14,7 +14,7 @@ const Navigation = () => {
 								isActive ? "nav-active" : undefined
 							}
 						>
-							accueil
+							Accueil
 						</NavLink>
 					</li>
 					<li>
@@ -24,7 +24,7 @@ const Navigation = () => {
 								isActive ? "nav-active" : undefined
 							}
 						>
-							à propos
+							À propos
 						</NavLink>
 					</li>
 					<li>
@@ -34,7 +34,7 @@ const Navigation = () => {
 								isActive ? "nav-active" : undefined
 							}
 						>
-							galerie
+							Galerie
 						</NavLink>
 					</li>
 					<li>
@@ -44,7 +44,7 @@ const Navigation = () => {
 								isActive ? "nav-active" : undefined
 							}
 						>
-							contact
+							Contact
 						</NavLink>
 					</li>
 				</ul>

@@ -9,15 +9,24 @@ $font-color1 : black;
 }
 
 body {
-    background: rgb(34, 33, 33);
+    background: fixed no-repeat url("../../public/img/route2.jpg");
     max-width: 1400px;
     height: 100vh;
     margin: auto;
 }
 
 section {
-    padding: 20px;
+    padding: 40px 20px;
     background-color: white;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 ul {

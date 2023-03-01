@@ -3,9 +3,9 @@
     .home-title {
         position: relative;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-        
+
         &::after {
             content: "";
             position: absolute;
@@ -34,5 +34,11 @@
             height: 4px;
             background-color: rgb(164, 162, 162);
         }
+    }
+    
+    .voiture-course {
+        position: absolute;
+        top: 130px;
+
     }
 }
