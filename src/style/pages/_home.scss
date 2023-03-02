@@ -1,44 +1,33 @@
 .home-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
 
     .home-title {
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 20px 0px 50px;
 
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 0px;
-            width: 40%;
-            height: 4px;
-            background-color: rgb(164, 162, 162);
+        .home-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+
+            img {
+                width: 100%;
+            }
         }
-    }
-
-    .home-video-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 0px 10px;
     }
 
     .last-news-container {
-        position: relative;
+        h2 {
 
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: -20px;
-            width: 40%;
-            height: 4px;
-            background-color: rgb(164, 162, 162);
+            &::after {
+                width: 80%;
+            }
         }
-    }
-    
-    .voiture-course {
-        position: absolute;
-        top: 130px;
-
     }
 }

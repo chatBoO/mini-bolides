@@ -1,26 +1,28 @@
 import React, { useEffect } from "react";
 import logo from "../assets/logo.jpg";
+import Loader from "./Loader";
 import Navigation from "./Navigation";
+
 
 const Header = () => {
 
-	// useEffect(() => {
-	// 	const headerContainer = document.querySelector(".header-container");
+	useEffect(() => {
+		const headerContainer = document.querySelector(".header-container");
 
-	// 	document.addEventListener("scroll", () => {
-	// 		let scrollValue = document.documentElement.scrollTop;
-	// 		console.log(scrollValue);
+		document.addEventListener("scroll", () => {
+			let scrollValue = document.documentElement.scrollTop;
 
-	// 		if (scrollValue > 100) {
-	// 			headerContainer.classList.add("hidden");
-	// 		} else {
-	// 			headerContainer.classList.remove("hidden");
-	// 		}
-	// 	});
-	// }, []);
+			if (scrollValue > 100) {
+				headerContainer.classList.add("hidden");
+			} else {
+				headerContainer.classList.remove("hidden");
+			}
+		});
+	}, []);
 
 	return (
 		<header>
+      <Loader />
 			<div className="header-container">
 				<a href="/" className="logo">
 					<img src={logo} alt="logo" />

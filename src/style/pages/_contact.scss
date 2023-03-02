@@ -1,6 +1,41 @@
- .contact,
- .contact a,
- .contact span {
-     line-height: 1.5rem;
-     color: beige;
- }
+.contact-container {
+        padding: 10px 20px 40px;
+        border-radius: 20px;
+
+        .informations {
+            display: grid;
+            border: 1px solid rgb(209, 209, 209);
+            grid-template-columns: 1fr 1fr;
+
+            .address {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 0px 20px;
+            }
+
+            .phone_mail {
+                display: grid;
+                grid-template-rows: repeat(2, 1fr);
+                align-items: center;
+                text-align: center;
+                border-left: 1px solid rgb(209, 209, 209);
+
+                .phone {
+                    display: grid;
+                    grid-template-columns: 30% 70%;
+                    border-bottom: 1px solid rgb(209, 209, 209);
+                }
+                
+                .mail {
+                    display: grid;
+                    grid-template-columns: 30% 70%;
+                }
+            }
+        }
+
+        .map {
+            margin-top: 50px;
+        }
+}

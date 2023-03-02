@@ -1,5 +1,6 @@
-$font-color1 : black;
+// ---------- TYPOGRAPHY ----------
 
+$font-color1 : black;
 
 * {
     box-sizing: border-box;
@@ -16,17 +17,33 @@ body {
 }
 
 section {
-    padding: 40px 20px;
     background-color: white;
-    border-radius: 20px;
 }
 
 h1 {
     font-size: 3rem;
+    text-align: center;
 }
 
 h2 {
+    position: relative;
+    text-align: center;
     font-size: 2rem;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        width: 110%;
+        height: 4px;
+        transform: translateX(-50%);
+        background-color: rgb(164, 162, 162);
+    }
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 ul {
@@ -49,4 +66,31 @@ figure {
 
 table {
     margin: 0px;
+}
+
+// ---------- KEYFRAMES ----------
+
+@keyframes voiture {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    99% {
+        z-index: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
 }
