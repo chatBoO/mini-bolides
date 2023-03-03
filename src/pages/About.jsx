@@ -6,10 +6,9 @@ const About = () => {
 		<section className="about-container page">
 			<h1>À propos de notre club...</h1>
 			<div className="about-content">
-
-				<section className="president-container">
-					<h2>👨‍💼 Le mot du président ✨</h2>
-					<div className="president-word bloc">
+				<section className="president-container bloc">
+					<h2> Le mot du président </h2>
+					<div className="president-word">
 						<blockquote>
 							"Notre club est ouvert à tous les niveaux que vous
 							soyez simple débutant ou déjà compétiteur. Au sein
@@ -28,9 +27,9 @@ const About = () => {
 					</div>
 				</section>
 
-				<section className="opening-container">
-					<h2>🕑 Horaires d'ouverture 📆</h2>
-					<div className="opening-hours bloc">
+				<section className="opening-container bloc">
+					<h2>🕑 Horaires d'ouverture </h2>
+					<div className="opening-hours">
 						<table>
 							<thead>
 								<tr>
@@ -71,9 +70,9 @@ const About = () => {
 					</div>
 				</section>
 
-				<section className="price-container">
-					<h2>💶 Devenir licencié 🪪</h2>
-					<div className="price bloc">
+				<section className="price-container bloc">
+					<h2>🪪 Devenir licencié(e) </h2>
+					<div className="price">
 						<h3>Licence : 150€</h3>
 						<h3>Renouvellement : 100 € / an</h3>
 						<p>
@@ -82,7 +81,6 @@ const About = () => {
 						</p>
 					</div>
 				</section>
-
 			</div>
 		</section>
 	);

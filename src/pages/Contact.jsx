@@ -21,18 +21,18 @@ const Contact = () => {
 									className="clipboard"
 									onClick={() => alert("Téléphone copié !")}
 								>
-									📱06 80 76 59 46
+									06 80 76 59 46
 								</h3>
 							</CopyToClipboard>
 						</div>
 
 						<div className="mail">
-							<h3>Mail :</h3>
+							<h3> Mail :</h3>
 							<a
 								href="mailto:cmbvcv@laposte.net"
 								style={{ cursor: "pointer" }}
 							>
-								<h3>💻 cmbvcv@laposte.net</h3>
+								<h3> cmbvcv@laposte.net</h3>
 							</a>
 						</div>
 					</div>

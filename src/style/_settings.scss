@@ -27,7 +27,7 @@ body {
 }
 
 .bloc {
-    padding: 10px 0px 30px;
+    padding: 40px 0px;
 }
 
 h1 {
@@ -39,6 +39,7 @@ h2 {
     position: relative;
     text-align: center;
     font-size: 2rem;
+    margin-top: 0px;
 
     &::after {
         content: "";
