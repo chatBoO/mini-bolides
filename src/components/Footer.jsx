@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
-import newsLetter from "../assets/newsletter.png";
 import { db } from "../firebase";
+import axios from "axios";
+
+import newsLetter from "../assets/newsletter.png";
+import bmc from "../assets/bmc-button.png";
 
 const Footer = () => {
 	const [mailNewsletter, setMailNewsletter] = useState("");
+	const [weather, setweather] = useState();
 
 	const year = new Date().getFullYear();
 
@@ -26,6 +30,14 @@ const Footer = () => {
 		alert("Votre adresse e-mail a bien été ajoutée !");
 	};
 
+	useEffect(() => {
+		axios
+			.get(
+				"https://api.openweathermap.org/data/2.5/weather?lat=46.131859&lon=3.425488&lang=fr&units=metric&appid=d7afabef76a860cb1dfcfb95321c387e"
+			)
+			.then((response) => setweather(response.data));
+	}, []);
+
 	return (
 		<footer>
 			<div className="footer-container">
@@ -39,9 +51,7 @@ const Footer = () => {
 							Pour ne rien rater de nos activités, inscris toi à
 							notre newsletter !{" "}
 						</p>
-						<form
-							onSubmit={(e) => addMemberToNewsletter(e)}
-						>
+						<form onSubmit={(e) => addMemberToNewsletter(e)}>
 							<input
 								type="email"
 								id="email"
@@ -64,11 +74,31 @@ const Footer = () => {
 					</div>
 				</div>
 
+				{weather !== undefined && (
+					<div className="weather">
+						<h3>🌤️ Météo {weather.name}</h3>
+						<div className="weather__infos">
+							<img
+								src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
+								alt="icone météo"
+							/>
+							<h3>
+								{weather.main.temp}° - {weather.weather[0].description}
+							</h3>
+						</div>
+					</div>
+				)}
+
 				<p className="webmaster">
 					Webmaster :{" "}
 					<a href="https://mathieu-segaud.netlify.app/">
 						<span>Mathieu SEGAUD</span>
 					</a>
+					<span className="bmc">
+						<a href="https://www.buymeacoffee.com/segaudmathieu">
+							<img src={bmc} alt="buy me a coffee" />
+						</a>
+					</span>
 				</p>
 			</div>
 		</footer>

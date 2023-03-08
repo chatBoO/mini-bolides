@@ -1,6 +1,9 @@
 // ---------- TYPOGRAPHY ----------
 
 $font-color1 : black;
+$font-color2 : rgb(245, 236, 226); // Links nav-bar
+
+$background-color1 : rgba(0, 0, 0, 0.801); // header-container
 
 * {
     box-sizing: border-box;
@@ -38,7 +41,7 @@ h2 {
     position: relative;
     text-align: center;
     font-size: 2rem;
-    margin-top: 0px;
+    margin: 0px 0px 40px;
 
     &::after {
         content: "";
