@@ -33,7 +33,7 @@ const Footer = () => {
 	useEffect(() => {
 		axios
 			.get(
-				"https://api.openweathermap.org/data/2.5/weather?lat=46.131859&lon=3.425488&lang=fr&units=metric&appid=d7afabef76a860cb1dfcfb95321c387e"
+				`https://api.openweathermap.org/data/2.5/weather?lat=46.131859&lon=3.425488&lang=fr&units=metric&appid=${import.meta.env.VITE_METEO_KEY}`
 			)
 			.then((response) => setweather(response.data));
 	}, []);
