@@ -8,12 +8,12 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-	apiKey: "AIzaSyAn30Cxcz7BAC8MMYMSWGN8Z938qqyC534",
+	apiKey: import.meta.env.VITE_API_KEY,
 	authDomain: "mini-bolides-vcb.firebaseapp.com",
 	projectId: "mini-bolides-vcb",
 	storageBucket: "mini-bolides-vcb.appspot.com",
 	messagingSenderId: "926749796764",
-	appId: "1:926749796764:web:9937598eaab3b37ed70059",
+	appId: import.meta.env.VITE_APP_ID,
 	measurementId: "G-C0EWVJX76J",
 };
 
