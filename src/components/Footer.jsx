@@ -4,7 +4,7 @@ import { db } from "../firebase";
 import axios from "axios";
 
 import newsLetter from "../assets/newsletter.png";
-import bmc from "../assets/bmc-button.png";
+import bmc from "../assets/bmc-button.webp";
 
 const Footer = () => {
 	const [mailNewsletter, setMailNewsletter] = useState("");

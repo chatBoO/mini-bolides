@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import { db } from "../firebase";
 
-import homeImg from "../assets/banderole_mini_bolides2.jpg";
+import homeImg from "../assets/banderole_mini_bolides.jpg";
 import News from "../components/News";
 
 const Home = () => {
