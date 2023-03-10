@@ -1,17 +1,26 @@
-nav {
+.desktop-nav {
     display: flex;
     justify-content: space-between;
     width: 85%;
     height: 100%;
     user-select: none;
 
-    .nav-container {
+    @media all and (max-width: $mobile-size) {
+        display: none;
+    }
+
+    .desktop-nav-container {
         display: flex;
         justify-content: space-between;
+        
 
         ul {
             display: flex;
             justify-content: space-between;
+
+            @media all and (min-width: $mobile-size) and (max-width: $tablet-size) {
+                padding: 0px 10px;
+            }
 
             li {
                 display: flex;
@@ -19,6 +28,10 @@ nav {
                 align-items: center;
                 width: 150px;
                 height: 100%;
+
+                @media all and (min-width: $mobile-size) and (max-width: $tablet-size) {
+                    width: 120px;
+                }
 
                 &:hover {
                     background-color: lighten($color: $background-color1, $amount: 20);
@@ -40,11 +53,19 @@ nav {
         justify-content: center;
         align-items: center;
 
+        @media all and (max-width: $mobile-size) {
+            display: none;
+        }
+
         p {
             margin: 0px;
             padding-right: 10px;
             text-align: center;
             color: $font-color2;
+
+            @media all and (max-width: $tablet-size) {
+                display: none;
+            }
         }
 
         a {
@@ -52,6 +73,10 @@ nav {
 
             &:hover {
                 transform: scale(1.2);
+            }
+
+            img {
+                width: 50px;
             }
         }
     }
@@ -61,5 +86,9 @@ nav {
         color: darken($color: $font-color2, $amount: 10) !important;
         font-weight: bold;
         text-decoration: underline;
+
+        @media all and (min-width: $mobile-size) and (max-width: $tablet-size) {
+            transform: none;
+        }
     }
 }

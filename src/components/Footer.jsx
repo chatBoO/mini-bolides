@@ -90,7 +90,6 @@ const Footer = () => {
 				)}
 
 				<p className="webmaster">
-					Webmaster :{" "}
 					<a href="https://mathieu-segaud.netlify.app/">
 						<span>Mathieu SEGAUD</span>
 					</a>

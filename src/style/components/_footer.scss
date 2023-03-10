@@ -17,9 +17,18 @@ footer {
             right: 5%;
             top: 15%;
             margin: 0px;
+
+            @media all and (min-width: $mobile-size) and (max-width: $tablet-size) {
+                
+            }
         }
 
         &__inscription {
+
+            @media all and (min-width: $mobile-size) and (max-width: $tablet-size) {
+                width: 50%;
+                text-align: center;
+            }
 
             p {
                 position: relative;
@@ -42,6 +51,11 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media all and (min-width: $mobile-size) and (max-width: $tablet-size) {
+            width: 50%;
+            text-align: center;
+        }
     }
 
     .weather {
@@ -54,8 +68,16 @@ footer {
         align-items: center;
         width: 200px;
 
+        @media all and (min-width: $mobile-size) and (max-width: $tablet-size) {
+            width: 150px;
+        }
+
         h3 {
             margin: 0px;
+
+            @media all and (min-width: $mobile-size) and (max-width: $tablet-size) {
+                font-size: 1.2rem;
+            }
         }
 
         &__infos {
@@ -68,11 +90,14 @@ footer {
 
     .webmaster {
         position: absolute;
-        right: 10px;
+        right: 1%;
         bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 200px;
         margin: 0px;
-        padding: 10px;
         font-size: 0.8rem;
         border-radius: 10px;
 

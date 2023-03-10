@@ -1,6 +1,10 @@
 header {
     min-height: 25vh;
 
+    @media all and (max-width: $mobile-size) {
+        min-height: 100px;
+    }
+
     .header-container {
         position: fixed;
         top: 0;
@@ -15,12 +19,49 @@ header {
         color: white;
         transition: 0.3s;
 
+        @media all and (min-width: $mobile-size) and (max-width: $tablet-size) {
+            padding: 0px 40px 0px 25px;
+        }
+
+        @media all and (max-width: $mobile-size) {
+            padding: 0px 30px;
+        }
+
+        @media all and (max-width: 500px) {
+            padding: 0px 25px;
+        }
+
         &.hidden {
             top: -100px
         }
 
         .logo {
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+
+                @media all and (max-width: $tablet-size) {
+                    width: 150px;
+                }
+
+                @media all and (max-width: 500px) {
+                    width: 170px;
+                }
+            }
+        }
+
+        .responsive-nav-button {
+            font-size: 3.5rem;
+
+            i {
+                color: gainsboro;
+            }
+
+            @media all and (min-width: 769px) {
+                display: none;
+            }
         }
     }
 }

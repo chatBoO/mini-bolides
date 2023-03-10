@@ -2,10 +2,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import facebook from "../assets/facebook.png";
 
-const Navigation = () => {
+const ResponsiveNav = () => {
 	return (
-		<nav className="desktop-nav">
-			<div className="desktop-nav-container">
+		<nav className="responsive-nav">
+			<div className="responsive-nav-container">
 				<ul>
 					<li>
 						<NavLink
@@ -47,20 +47,18 @@ const Navigation = () => {
 							Contact
 						</NavLink>
 					</li>
+					<li>
+						<a
+							href="https://www.facebook.com/groups/507683384816301/"
+							target="_blank"
+						>
+							<img src={facebook} alt="logo facebook" />
+						</a>
+					</li>
 				</ul>
-			</div>
-
-			<div className="social-network">
-				<p>Rejoignez-nous sur notre page Facebook : </p>
-				<a
-					href="https://www.facebook.com/groups/507683384816301/"
-					target="_blank"
-				>
-					<img src={facebook} alt="logo facebook" />
-				</a>
 			</div>
 		</nav>
 	);
 };
 
-export default Navigation;
+export default ResponsiveNav;

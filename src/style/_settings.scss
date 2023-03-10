@@ -5,6 +5,9 @@ $font-color2 : rgb(245, 236, 226); // Links nav-bar
 
 $background-color1 : rgba(0, 0, 0, 0.801); // header-container
 
+$tablet-size: 1000px;
+$mobile-size : 768px;
+
 * {
     box-sizing: border-box;
     object-fit: cover;
@@ -17,6 +20,10 @@ body {
     max-width: 1400px;
     height: 100vh;
     margin: auto;
+
+    @media all and (max-width: $mobile-size) {
+        background: gainsboro;
+    }
 }
 
 .page {
@@ -35,6 +42,10 @@ body {
 h1 {
     font-size: 3rem;
     text-align: center;
+
+    @media all and (max-width: $mobile-size) {
+        font-size: 2rem;
+    }
 }
 
 h2 {
@@ -52,6 +63,10 @@ h2 {
         height: 4px;
         transform: translateX(-50%);
         background-color: rgb(164, 162, 162);
+    }
+
+      @media all and (max-width: $mobile-size) {
+        font-size: 1.5rem;
     }
 }
 
