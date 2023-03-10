@@ -33,7 +33,9 @@ const Footer = () => {
 	useEffect(() => {
 		axios
 			.get(
-				`https://api.openweathermap.org/data/2.5/weather?lat=46.131859&lon=3.425488&lang=fr&units=metric&appid=${import.meta.env.VITE_METEO_KEY}`
+				`https://api.openweathermap.org/data/2.5/weather?lat=46.131859&lon=3.425488&lang=fr&units=metric&appid=${
+					import.meta.env.VITE_METEO_KEY
+				}`
 			)
 			.then((response) => setweather(response.data));
 	}, []);
@@ -41,6 +43,22 @@ const Footer = () => {
 	return (
 		<footer>
 			<div className="footer-container">
+				{weather !== undefined && (
+					<div className="weather">
+						<h3>🌤️ Météo {weather.name}</h3>
+						<div className="weather__infos">
+							<img
+								src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
+								alt="icone météo"
+							/>
+							<h3>
+								{Math.round(weather.main.temp)}° -{" "}
+								{weather.weather[0].description}
+							</h3>
+						</div>
+					</div>
+				)}
+
 				<div className="newsletter">
 					<div className="newsletter__icone">
 						<img src={newsLetter} alt="Newsletter" />
@@ -73,21 +91,6 @@ const Footer = () => {
 						</p>
 					</div>
 				</div>
-
-				{weather !== undefined && (
-					<div className="weather">
-						<h3>🌤️ Météo {weather.name}</h3>
-						<div className="weather__infos">
-							<img
-								src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
-								alt="icone météo"
-							/>
-							<h3>
-								{weather.main.temp}° - {weather.weather[0].description}
-							</h3>
-						</div>
-					</div>
-				)}
 
 				<p className="webmaster">
 					<a href="https://mathieu-segaud.netlify.app/">

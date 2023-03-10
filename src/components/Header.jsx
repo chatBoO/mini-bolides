@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import logo from "../assets/logo.jpg";
 import Loader from "./Loader";
 import Navigation from "./Navigation";
@@ -7,7 +7,9 @@ import ResponsiveNav from "./ResponsiveNav";
 const Header = () => {
 	
 	const toggleResponsiveNav = () => {
-		const responsiveNavButton = document.querySelector(".responsive-nav-button");
+		const responsiveNavButton = document.querySelector(".responsive-nav");
+		
+		responsiveNavButton.classList.toggle("open");
 	}
 
 	useEffect(() => {
@@ -32,7 +34,7 @@ const Header = () => {
 					<img src={logo} alt="logo" />
 				</a>
 				<Navigation />
-				<div className="responsive-nav-button">
+				<div className="responsive-nav-button" onClick={toggleResponsiveNav}>
 					<i className="fa-solid fa-bars"></i>
 				</div>
 			</div>

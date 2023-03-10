@@ -72,11 +72,12 @@
             transition: 0.3s;
 
             &:hover {
-                transform: scale(1.2);
+                transform: scale(1.15);
             }
 
             img {
-                width: 50px;
+                width: 40px;
+                
             }
         }
     }

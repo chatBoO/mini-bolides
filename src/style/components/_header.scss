@@ -27,7 +27,7 @@ header {
             padding: 0px 30px;
         }
 
-        @media all and (max-width: 500px) {
+        @media all and (max-width: $min-size) {
             padding: 0px 25px;
         }
 
@@ -44,10 +44,6 @@ header {
 
                 @media all and (max-width: $tablet-size) {
                     width: 150px;
-                }
-
-                @media all and (max-width: 500px) {
-                    width: 170px;
                 }
             }
         }

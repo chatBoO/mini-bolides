@@ -7,6 +7,7 @@ $background-color1 : rgba(0, 0, 0, 0.801); // header-container
 
 $tablet-size: 1000px;
 $mobile-size : 768px;
+$min-size: 500px;
 
 * {
     box-sizing: border-box;
@@ -20,6 +21,7 @@ body {
     max-width: 1400px;
     height: 100vh;
     margin: auto;
+    overflow-x: hidden;
 
     @media all and (max-width: $mobile-size) {
         background: gainsboro;
@@ -33,6 +35,10 @@ body {
     align-items: center;
     padding: 10px 0px 40px;
     background-color: white;
+
+    @media all and (max-width: $mobile-size) {
+        padding: 0px;
+    }
 }
 
 .bloc {
@@ -45,6 +51,10 @@ h1 {
 
     @media all and (max-width: $mobile-size) {
         font-size: 2rem;
+    }
+
+    @media all and (max-width: $mobile-size) {
+        font-size: 1.6rem;
     }
 }
 
@@ -65,13 +75,17 @@ h2 {
         background-color: rgb(164, 162, 162);
     }
 
-      @media all and (max-width: $mobile-size) {
-        font-size: 1.5rem;
+    @media all and (max-width: $mobile-size) {
+        font-size: 1.3rem;
     }
 }
 
 h3 {
     font-size: 1.5rem;
+
+    @media all and (max-width: $mobile-size) {
+        font-size: 1.2rem;
+    }
 }
 
 ul {

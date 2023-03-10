@@ -16,4 +16,7 @@
         animation: voiture 2.5s ease-in-out forwards;
     }
 
+        @media all and (max-width: $mobile-size) {
+            display: none;
+        }
 }

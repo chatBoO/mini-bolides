@@ -3,8 +3,15 @@ import { NavLink } from "react-router-dom";
 import facebook from "../assets/facebook.png";
 
 const ResponsiveNav = () => {
+
+	const toggleResponsiveNav = () => {
+		const responsiveNavButton = document.querySelector(".responsive-nav");
+		
+		responsiveNavButton.classList.toggle("open");
+	}
+
 	return (
-		<nav className="responsive-nav">
+		<nav className="responsive-nav" onClick={toggleResponsiveNav}>
 			<div className="responsive-nav-container">
 				<ul>
 					<li>
