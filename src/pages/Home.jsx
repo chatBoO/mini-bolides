@@ -10,7 +10,9 @@ const Home = () => {
 
 	const getAllNews = async () => {
 		let newsArray = [];
-		const news = await getDocs(collection(db, "news"));
+		const news = await getDocs(
+			query(collection(db, "news"), orderBy("date", "desc"))
+		);
 		news.forEach((doc) => {
 			newsArray.push(doc.data());
 			setAllNews(newsArray);
