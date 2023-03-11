@@ -11,8 +11,13 @@
         .informations {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            width: 80%;
+            width: 85%;
             border: 1px solid rgb(209, 209, 209);
+
+            @media all and (max-width: 1000px) {
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: auto;
+            }
 
             .address {
                 display: grid;
@@ -26,18 +31,19 @@
                 display: grid;
                 grid-template-rows: repeat(2, 1fr);
                 align-items: center;
-                text-align: center;
+                // text-align: center;
+                padding-left: 10px;
                 border-left: 1px solid rgb(209, 209, 209);
 
                 .phone {
                     display: grid;
-                    grid-template-columns: 30% 70%;
+                    grid-template-columns: 35% 65%;
                     border-bottom: 1px solid rgb(209, 209, 209);
                 }
 
                 .mail {
                     display: grid;
-                    grid-template-columns: 30% 70%;
+                    grid-template-columns: 35% 65%;
                 }
             }
         }

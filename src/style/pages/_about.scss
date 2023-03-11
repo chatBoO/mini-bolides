@@ -6,6 +6,10 @@
         align-items: center;
         width: 80%;
 
+        @media all and (max-width: 1200px) {
+            width: 100%;
+        }
+
         h2 {
             position: relative;
             text-align: center;
@@ -33,6 +37,17 @@
                 width: 90%;
                 padding: 20px;
 
+                @media all and (max-width: 900px) {
+                    width: 100%;
+                    padding: 0px 20px 0px 40px;
+                }
+
+                @media all and (max-width: $mobile-size) {
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0px;
+                }
+
                 blockquote {
                     display: flex;
                     align-items: center;
@@ -43,6 +58,22 @@
                     text-align: justify;
                     margin: 0px;
                     padding-right: 30px;
+
+                    @media all and (max-width: 900px) {
+                        font-size: 1.5rem;
+                    }
+
+                    @media all and (max-width: $mobile-size) {
+                        width: 70%;
+                        font-size: 1.3rem;
+                        padding: 0px;
+                        order: 2;
+                    }
+
+                    @media all and (max-width: $min-size) {
+                        width: 90%;
+                        font-size: 1.2rem;
+                    }
                 }
 
                 figure {
@@ -50,6 +81,15 @@
                     flex-direction: column;
                     align-items: center;
                     width: 50%;
+
+                    @media all and (max-width: $mobile-size) {
+                        order: 1;
+                        margin-bottom: 20px;
+                    }
+
+                    @media all and (max-width: $min-size) {
+                        width: 60%;
+                    }
                 }
 
                 img {
@@ -72,6 +112,14 @@
                 justify-content: center;
                 align-items: center;
                 width: 60%;
+
+                @media all and (max-width: $mobile-size) {
+                    width: 80%;
+                }
+
+                @media all and (max-width: $min-size) {
+                    width: 90%;
+                }
 
                 table {
                     width: 100%;
@@ -109,6 +157,10 @@
 
                 h3 {
                     margin: 10px 0px;
+                }
+
+                p {
+                    text-align: center;
                 }
             }
         }

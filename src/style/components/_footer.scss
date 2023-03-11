@@ -11,9 +11,9 @@ footer {
     }
 
     .footer-container {
-        @media all and (max-width: $mobile-size) {
+        @media all and (max-width: $tablet-size) {
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
             padding: 10px;
         }
 
@@ -37,12 +37,17 @@ footer {
 
             @media all and (max-width: $tablet-size) {
                 position: initial;
-                width: 30%;
+                width: 20%;
+                margin-right: 20px;
             }
 
             @media all and (max-width: $mobile-size) {
                 width: 60%;
                 padding: 5px;
+            }
+
+            @media all and (max-width: $min-size) {
+                width: 50%;
             }
 
             h3 {
@@ -67,8 +72,8 @@ footer {
             justify-content: center;
             align-items: center;
 
-            @media all and (max-width: $mobile-size) {
-                width: 65%;
+            @media all and (max-width: $tablet-size) {
+                width: 50%;
             }
 
             @media all and (max-width: $mobile-size) {
