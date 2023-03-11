@@ -13,6 +13,7 @@ const Contact = () => {
 					</h3>
 
 					<div className="phone_mail">
+						
 						<div className="phone">
 							<h3>Téléphone :</h3>
 							<CopyToClipboard text="0642844284">
