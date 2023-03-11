@@ -3,10 +3,10 @@
     top: 100px;
     left: 0px;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.945);
     transform: translateX(-100%);
-    transition: 1s;
+    transition: 0.5s;
     z-index: 1;
 
     @media all and (min-width: $mobile-size) {
