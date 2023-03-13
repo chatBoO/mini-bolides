@@ -18,6 +18,7 @@ header {
         background-color: $background-color1;
         color: white;
         transition: 0.3s;
+        z-index: 1;
 
         @media all and (min-width: $mobile-size) and (max-width: $tablet-size) {
             padding: 0px 40px 0px 25px;
