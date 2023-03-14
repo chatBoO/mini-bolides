@@ -9,15 +9,14 @@ const Home = () => {
 	const [allNews, setAllNews] = useState([]);
 
 	const getAllNews = async () => {
-		let newsArray = [];
 		const news = await getDocs(
 			query(collection(db, "news"), orderBy("date", "desc"))
 		);
 		news.forEach((doc) => {
-			newsArray.push(doc.data());
-			setAllNews(newsArray);
+			setAllNews(data => [...data, doc.data()])
 		});
 	};
+	
 	useEffect(() => {
 		getAllNews();
 	}, []);
