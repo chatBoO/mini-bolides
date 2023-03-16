@@ -1,4 +1,7 @@
 // ---------- TYPOGRAPHY ----------
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;500;600;700&display=swap');
+
+$font1: 'Signika Negative', sans-serif;
 
 $font-color1 : black;
 $font-color2 : rgb(221, 45, 45); // Links nav-bar
@@ -13,6 +16,7 @@ $min-size: 500px;
     box-sizing: border-box;
     object-fit: cover;
     scroll-behavior: smooth;
+    font-family: $font1;
     color: $font-color1
 }
 
