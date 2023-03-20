@@ -27,7 +27,7 @@ const Navigation = () => {
 							À propos
 						</NavLink>
 					</li>
-					<li>
+					{/* <li>
 						<NavLink
 							to="/gallery"
 							className={({ isActive }) =>
@@ -36,7 +36,7 @@ const Navigation = () => {
 						>
 							Galerie
 						</NavLink>
-					</li>
+					</li> */}
 					<li>
 						<NavLink
 							to="/contact"

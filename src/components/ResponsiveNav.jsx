@@ -34,7 +34,7 @@ const ResponsiveNav = () => {
 							À propos
 						</NavLink>
 					</li>
-					<li>
+					{/* <li>
 						<NavLink
 							to="/gallery"
 							className={({ isActive }) =>
@@ -43,7 +43,7 @@ const ResponsiveNav = () => {
 						>
 							Galerie
 						</NavLink>
-					</li>
+					</li> */}
 					<li>
 						<NavLink
 							to="/contact"
